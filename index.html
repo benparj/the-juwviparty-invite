@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Juwviparty - Wedding Invitation</title>
+    <meta
+      name="description"
+      content="The Juwviparty wedding celebration of Bennett Juwvipart and Jasmine Juwvipart."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page scroll-page">
+      <header class="hero scroll-panel scroll-panel--dark is-visible">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="hero-kicker">The Wedding</p>
+          <h1 class="hero-names">The Juwviparty</h1>
+          <p class="hero-subtitle">Bennett &amp; Jasmine Juwvipart</p>
+          <p class="hero-date">March 26, 2028</p>
+          <p class="hero-location">Monserate Winery &middot; Fallbrook, CA</p>
+          <a href="#rsvp" class="btn-primary">RSVP</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="section section-intro scroll-panel">
+          <div class="section-inner">
+            <p class="section-kicker">Our Story</p>
+            <h2 class="section-title">A new chapter begins</h2>
+            <p class="section-body">
+              We are so excited to celebrate our marriage with the people we
+              love most. This page is a small glimpse into our story and all the
+              details you need to join us on our special day.
+            </p>
+          </div>
+        </section>
+
+        <section class="section section-details scroll-panel" id="details">
+          <div class="section-inner section-grid">
+            <div>
+              <p class="section-kicker">The Celebration</p>
+              <h2 class="section-title">Wedding Details</h2>
+              <ul class="detail-list">
+                <li>
+                  <h3>Ceremony</h3>
+                  <p>5:00 PM &ndash; 5:30 PM &middot; Monserate Winery</p>
+                  <p class="detail-note">
+                    Please arrive 20–30 minutes early to be seated.
+                  </p>
+                </li>
+                <li>
+                  <h3>Reception</h3>
+                  <p>5:30 PM &ndash; 10:00 PM &middot; Monserate Winery</p>
+                  <p class="detail-note">
+                    Dinner, drinks, and dancing to follow immediately after the
+                    ceremony.
+                  </p>
+                </li>
+                <li>
+                  <h3>Attire</h3>
+                  <p>[Suggested Dress Code, e.g., Cocktail or Semi-formal]</p>
+                </li>
+              </ul>
+            </div>
+            <div class="card card-highlight">
+              <p class="card-label">Quick Info</p>
+              <div class="card-row">
+                <span>Date</span>
+                <span>March 26, 2028</span>
+              </div>
+              <div class="card-row">
+                <span>Location</span>
+                <span>Monserate Winery &middot; Fallbrook, CA</span>
+              </div>
+              <div class="card-row">
+                <span>RSVP by</span>
+                <span>[RSVP Deadline]</span>
+              </div>
+              <div class="card-row">
+                <span>Contact</span>
+                <span>[Your Email or Phone]</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-schedule scroll-panel">
+          <div class="section-inner">
+            <p class="section-kicker">The Day Of</p>
+            <h2 class="section-title">Schedule</h2>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-time">4:30 PM</div>
+                <div class="timeline-content">
+                  <h3>Guest Arrival</h3>
+                  <p>Doors open and light refreshments available.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-time">5:00 PM</div>
+                <div class="timeline-content">
+                  <h3>Ceremony</h3>
+                  <p>Witness us exchange vows surrounded by family and friends.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-time">6:00 PM</div>
+                <div class="timeline-content">
+                  <h3>Cocktail Hour</h3>
+                  <p>Enjoy drinks, appetizers, and photos with the newlyweds.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-time">7:00 PM &ndash; 10:00 PM</div>
+                <div class="timeline-content">
+                  <h3>Reception</h3>
+                  <p>Dinner, toasts, and dancing into the evening.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-rsvp scroll-panel" id="rsvp">
+          <div class="section-inner section-grid">
+            <div>
+              <p class="section-kicker">RSVP</p>
+              <h2 class="section-title">We hope you can join us</h2>
+              <p class="section-body">
+                Please take a moment to let us know if you will be able to celebrate with us.
+                Your response helps us plan seating, dinner, and all the little details.
+              </p>
+              <form
+                class="rsvp-form"
+                action="https://docs.google.com/forms/d/e/FORM_ID_HERE/formResponse"
+                method="POST"
+                target="_blank"
+              >
+                <div class="field">
+                  <label for="guest-names">Guest name(s)</label>
+                  <input
+                    id="guest-names"
+                    name="entry.GUEST_NAMES_ENTRY_ID"
+                    type="text"
+                    required
+                    placeholder="Full names of everyone attending"
+                  />
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input
+                    id="email"
+                    name="entry.EMAIL_ENTRY_ID"
+                    type="email"
+                    required
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div class="field">
+                  <label for="attending">Will you be attending?</label>
+                  <select
+                    id="attending"
+                    name="entry.ATTENDING_ENTRY_ID"
+                    required
+                  >
+                    <option value="">Please select</option>
+                    <option value="Yes, joyfully accepting">
+                      Yes, joyfully accepting
+                    </option>
+                    <option value="No, regretfully declining">
+                      No, regretfully declining
+                    </option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="guests-count">Number of guests</label>
+                  <input
+                    id="guests-count"
+                    name="entry.GUESTS_COUNT_ENTRY_ID"
+                    type="number"
+                    min="1"
+                    max="10"
+                    placeholder="Total number including you"
+                  />
+                </div>
+                <div class="field">
+                  <label for="dietary">Dietary needs or allergies</label>
+                  <textarea
+                    id="dietary"
+                    name="entry.DIETARY_ENTRY_ID"
+                    rows="3"
+                    placeholder="Let us know any dietary restrictions"
+                  ></textarea>
+                </div>
+                <div class="field">
+                  <label for="song-request">Song request (optional)</label>
+                  <input
+                    id="song-request"
+                    name="entry.SONG_ENTRY_ID"
+                    type="text"
+                    placeholder="A song you'd love to hear"
+                  />
+                </div>
+                <button type="submit" class="btn-primary">
+                  Submit RSVP
+                </button>
+                <p class="rsvp-note">
+                  This form submits securely to our Google Form. You can update your
+                  response later by submitting it again.
+                </p>
+              </form>
+            </div>
+            <div class="card card-soft">
+              <p class="card-label">What to include</p>
+              <ul class="bullet-list">
+                <li>Names of guests attending</li>
+                <li>Yes / No response</li>
+                <li>Any dietary needs or allergies</li>
+                <li>Song request for the dance floor (optional!)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section-location scroll-panel">
+          <div class="section-inner section-grid">
+            <div>
+              <p class="section-kicker">Location</p>
+              <h2 class="section-title">How to get there</h2>
+              <p class="section-body">
+                Monserate Winery<br />
+                2757 Gird Rd<br />
+                Fallbrook, CA 92028
+              </p>
+              <p class="section-body">
+                Nestled among rolling vineyards, Monserate Winery offers beautiful views,
+                tranquil lakes, and a warm Tuscan-inspired atmosphere to celebrate with us.
+              </p>
+              <a
+                href="https://maps.app.goo.gl/BaA3P2z5F8bFh8yE6"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary"
+              >
+                Open in Google Maps
+              </a>
+            </div>
+            <div class="map-placeholder">
+              <p>Map preview or photo of the venue can go here.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer scroll-panel">
+        <p>
+          With love,<br />
+          Bennett &amp; Jasmine Juwvipart
+        </p>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Smooth scrolling for in-page links
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach((link) => {
+          link.addEventListener("click", (e) => {
+            const targetId = link.getAttribute("href");
+            if (!targetId || targetId === "#") return;
+            const target = document.querySelector(targetId);
+            if (!target) return;
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        });
+
+        // Scroll-driven panel reveal animation
+        const panels = document.querySelectorAll(".scroll-panel");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("is-visible");
+              }
+            });
+          },
+          {
+            threshold: 0.4,
+          }
+        );
+
+        panels.forEach((panel) => {
+          // Don't re-observe hero initial state
+          if (!panel.classList.contains("hero")) {
+            observer.observe(panel);
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
