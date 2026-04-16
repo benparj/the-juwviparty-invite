@@ -5,6 +5,46 @@
       "source": "remotion-dev/skills",
       "sourceType": "github",
       "computedHash": "df654933e451556147e384078c3fbdbac997cb0fe4d2f2db7642000c239304c5"
+    },
+    "gsap-core": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "computedHash": "97d3ea53a0af094879ac70d48240e69fc7bce5b8499d18a39a760e64f2354bcd"
+    },
+    "gsap-timeline": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "computedHash": "0e4b58becec4b318a219e2c89bec4ad4ec596de441935908559c1a2edb5bd8bc"
+    },
+    "gsap-scrolltrigger": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "computedHash": "c6815cbe167714e555bba811fb883774b7aae9e78a0f917fad875b61e0a947d4"
+    },
+    "gsap-plugins": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "computedHash": "b3fb14ea34444829836c8d74f3cf80ee6ddf726f9443c46ba3ea25b92215dcf1"
+    },
+    "gsap-utils": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "computedHash": "b440036744723e8e1eb1c55cd57bb7c261cce8cbc704b40aa89a4bd9349f1cc2"
+    },
+    "gsap-react": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "computedHash": "69004fc9729a42ead3c3ee77920063bfb29edc990319779d98ce4655ec05cd46"
+    },
+    "gsap-performance": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "computedHash": "ca10577525222714532b42ff057101fbbd2c2997a18a9de4dbc1639037d7e19e"
+    },
+    "gsap-frameworks": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "computedHash": "a14ca30a33cf45a374a31be6106b5050c63bda97c3798bcbc2ef4c0e7728c759"
     }
   }
 }
