@@ -19,6 +19,7 @@
   <body>
     <div class="page scroll-page">
       <header class="hero scroll-panel scroll-panel--dark is-visible">
+        <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
           <p class="hero-kicker">The Wedding</p>
@@ -302,8 +303,23 @@
       </footer>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        // Hero parallax
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".hero-bg", {
+          y: "30vh",
+          ease: "none",
+          scrollTrigger: {
+            trigger: ".hero",
+            scroller: ".scroll-page",
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+          },
+        });
         // Smooth scrolling for in-page links
         const links = document.querySelectorAll('a[href^="#"]');
         links.forEach((link) => {

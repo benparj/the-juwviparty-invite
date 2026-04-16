@@ -62,6 +62,12 @@ body {
   text-align: center;
   color: #fff;
   overflow: hidden;
+  background-color: #0f0a08;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: -30vh 0;
   background-image: linear-gradient(
       to bottom right,
       rgba(15, 10, 8, 0.5),
@@ -70,6 +76,7 @@ body {
     url("images/the-juwviparty-3.png");
   background-size: cover;
   background-position: center;
+  will-change: transform;
 }
 
 .hero-overlay {
