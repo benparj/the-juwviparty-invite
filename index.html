@@ -31,6 +31,23 @@
         </div>
       </header>
 
+      <video
+        class="bg-reel"
+        src="images/bg-reel.mp4"
+        muted
+        playsinline
+        autoplay
+        loop
+        preload="auto"
+      ></video>
+      <video
+        class="story-reel"
+        src="images/story-reel.mp4"
+        muted
+        playsinline
+        preload="auto"
+      ></video>
+
       <main>
         <section class="section section-intro scroll-panel">
           <div class="section-inner section-grid section-intro-grid">
@@ -332,6 +349,51 @@
             target.scrollIntoView({ behavior: "smooth", block: "start" });
           });
         });
+
+        // Reels — story-reel and bg-reel share one proxy + ScrollTrigger, stay in sync
+        if (window.innerWidth >= 1024) {
+          const storyReel = document.querySelector(".story-reel");
+          const bgReel = document.querySelector(".bg-reel");
+
+          storyReel && storyReel.pause();
+
+          const storyFade = gsap.to(storyReel, { opacity: 0.90, duration: 0.6, paused: true });
+          const bgFade    = gsap.to(bgReel,    { opacity: 0.20, duration: 0.6, paused: true });
+
+          // bg-reel plays freely — just fade in/out based on scroll position
+          ScrollTrigger.create({
+            trigger: ".section-intro",
+            endTrigger: "footer",
+            scroller: ".scroll-page",
+            start: "top top",
+            end: "bottom bottom",
+            onToggle(self) {
+              self.isActive ? bgFade.play() : bgFade.reverse();
+            },
+          });
+
+          // story-reel scrubs with scroll
+          const proxy = { t: 0 };
+          gsap.to(proxy, {
+            t: 1,
+            ease: "none",
+            onUpdate() {
+              if (storyReel.readyState >= 1 && storyReel.duration)
+                storyReel.currentTime = storyReel.duration * proxy.t;
+            },
+            scrollTrigger: {
+              trigger: ".section-intro",
+              endTrigger: "footer",
+              scroller: ".scroll-page",
+              start: "top top",
+              end: "bottom bottom",
+              scrub: 2,
+              onToggle(self) {
+                self.isActive ? storyFade.play() : storyFade.reverse();
+              },
+            },
+          });
+        }
 
         // Scroll-driven panel reveal animation
         const panels = document.querySelectorAll(".scroll-panel");
